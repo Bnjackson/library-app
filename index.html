@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My book library</title>
+        <title>My library</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/reset.css">#
+        <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
     <body>
         <header>
-
+            <h1>My library</h1>
         </header>
         <main>
-
+            <section class="information-section">
+                <h2>Library information</h2>
+                <div class="information-container">
+                    <div class="info">
+                        <span>Books:</span><span id="totalBooks"></span>
+                    </div>
+                    <div class="info">
+                        <span>Completed books:</span><span id="completedBooks"></span>
+                    </div>
+                    <div class="info">
+                        <span>Total pages:</span><span id="totalPages"></span>
+                    </div>
+                </div>
+            </section>
+            <div class="form-container">
+                <form action="">
+                    <div class="input-wrapper">
+                        <label for="bookName">Book</label>
+                        <input id="bookName" type="text">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="authorName">Author</label>
+                        <input id="authorName" type="text">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="pages">Pages</label>
+                        <input id="pages" type="number">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="bookStatus">Status</label>
+                        <select id="bookStatus">
+                            <option value="Read">Read</option>
+                            <option value="Unread">Unread</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Fellowship of the Ring</td>
+                            <td>J.R.R. Tolkien</td>
+                            <td>423</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
         <footer>
-        
+            <span>Made by <a href="https://github.com/Bnjackson">Benjamin Jackson</a> 2024</span>
         </footer>
         <script src="./index.js"></script>
     </body>
