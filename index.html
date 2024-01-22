@@ -16,37 +16,41 @@
                 <h2>Library information</h2>
                 <div class="information-container">
                     <div class="info">
-                        <span>Books:</span><span id="totalBooks"></span>
+                        <span>Books:</span><span id="totalBooks">0</span>
                     </div>
                     <div class="info">
-                        <span>Completed books:</span><span id="completedBooks"></span>
+                        <span>Completed books:</span><span id="completedBooks">0</span>
                     </div>
                     <div class="info">
-                        <span>Total pages:</span><span id="totalPages"></span>
+                        <span>Total pages:</span><span id="totalPages">0</span>
                     </div>
                 </div>
             </section>
             <div class="form-container">
+                <h2>Add book</h2>
                 <form action="">
-                    <div class="input-wrapper">
-                        <label for="bookName">Book</label>
-                        <input id="bookName" type="text">
+                    <div class="inputs-wrapper">
+                        <div class="input-wrapper">
+                            <label for="bookName">Book</label>
+                            <input id="bookName" type="text">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="authorName">Author</label>
+                            <input id="authorName" type="text">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="pages">Pages</label>
+                            <input id="pages" type="number">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="bookStatus">Status</label>
+                            <select id="bookStatus">
+                                <option value="Read">Read</option>
+                                <option value="Unread">Unread</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="input-wrapper">
-                        <label for="authorName">Author</label>
-                        <input id="authorName" type="text">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="pages">Pages</label>
-                        <input id="pages" type="number">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="bookStatus">Status</label>
-                        <select id="bookStatus">
-                            <option value="Read">Read</option>
-                            <option value="Unread">Unread</option>
-                        </select>
-                    </div>
+                    <button id="formSubmitBtn" class="form-submit-btn">Submit</button>
                 </form>
             </div>
             <div class="table-container">
@@ -64,6 +68,13 @@
                             <td>The Fellowship of the Ring</td>
                             <td>J.R.R. Tolkien</td>
                             <td>423</td>
+                            <td><button id="bookDeleteBtn" class="book-delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>The Fellowship of the Ring</td>
+                            <td>J.R.R. Tolkien</td>
+                            <td>423</td>
+                            <td><button id="bookDeleteBtn" class="book-delete-btn">Delete</button></td>
                         </tr>
                     </tbody>
                 </table>
