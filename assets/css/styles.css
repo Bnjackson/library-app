@@ -21,7 +21,6 @@ footer {
 button:hover {
     cursor: pointer;
 }
-
 /*
 TYPOGRAPHY
 */
@@ -67,11 +66,19 @@ body {
 }
 
 .form-submit-btn {
-    background-color: #5E81AC;
+    background-color: hsla(213, 32%, 52%, 80%);
+}
+
+.form-submit-btn:hover {
+    background-color: hsla(213, 32%, 52%, 100%);
 }
 
 .book-delete-btn {
-    background-color: hsl(354, 100%, 40%);
+    background-color: hsla(354, 100%, 40%, 80%);
+}
+
+.book-delete-btn:hover {
+    background-color: hsla(354, 100%, 40%, 100%);
 }
 
 /*
@@ -117,6 +124,28 @@ FORM
     display: block;
 }
 
+input {
+    height: 30px;
+    width: 220px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+select {
+    height: 30px;
+    border: 1px solid darkgrey;
+}
+
+input:focus, select:focus {
+    outline: 1px solid #5E81AC;
+    border: none;
+}
+
+input, select {
+    margin-top: 2px;
+}
+
 .form-submit-btn {
     margin-top: 10px;
     padding: 5px 15px;
@@ -127,22 +156,24 @@ FORM
 /*
 TABLE
 */
-.table-container {
-
-}
-
-.table {
+table {
     width: 100%;
+    border-collapse: collapse; 
 }
 
 th {
     text-align: left;
-    padding-bottom: 5px;
+    padding: 15px 0;
+}
+
+tr {
+    border-bottom: 1px solid darkgrey;
 }
 
 td {
     width: 20%;
-    padding: 5px 0;
+    padding: 20px 0;
+    
 }
 
 .book-delete-btn {
