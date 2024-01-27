@@ -190,3 +190,25 @@ footer {
     bottom: 0;
     text-align: center;
 }
+
+/*
+MEDIA QUERIES
+*/
+@media only screen and (max-width: 850px) {
+    header, main {
+        max-width: 80%;
+    }
+    .information-container {
+        display: block;
+    }
+    .inputs-wrapper {
+        display: block;
+    }
+    input {
+        width: 80%;
+    }
+    footer {
+        margin-top: 20px;
+        position: relative;
+    }
+}
